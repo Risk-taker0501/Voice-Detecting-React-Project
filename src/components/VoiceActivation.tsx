@@ -43,7 +43,7 @@ const VoiceActivation: React.FC = () => {
     <div>
       <button onClick={handleStartRecording} disabled={isRecording}>Start Recording</button>
       <button onClick={handleStopRecording} disabled={!isRecording}>Stop Recording</button>
-      <p>{ !isSpeaking ? "User is not speaking." : transcript}</p>
+      <p>{ !isSpeaking ? "User is not speaking." : "User is speaking, now."}</p>
     </div>
   );
 };
